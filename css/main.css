@@ -1,3 +1,112 @@
+@font-face {
+  font-family: "RobotoRegular";
+  src: url("../fonts/Roboto-Regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/Roboto-Light.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "RobotoThin";
+  src: url("../fonts/Roboto-Thin.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "RobotoBold";
+  src: url("../fonts/Roboto-Bold.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
 body {
-  background-color: #532;
-  font-size: 40px; }
+  margin: 0 0 0 0;
+  font-family: "RobotoThin";
+  background-color: #f3f0f0; }
+
+a {
+  color: #fff;
+  text-decoration: none; }
+  a:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.row {
+  margin: 0 0 0 0; }
+
+#header-fluid {
+  background: url("..//img/head-bg-gray.png") no-repeat;
+  height: 670px;
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.nav .row {
+  color: #fff;
+  font-size: 18px; }
+  .nav .row .col-lg-1 {
+    height: 170px;
+    text-align: center; }
+
+.title h1 {
+  font-family: "Robotolight";
+  color: #fff;
+  font-size: 8em;
+  text-align: right;
+  margin-right: 10px; }
+
+.title h2 {
+  color: #fff;
+  text-align: right;
+  font-size: 50px;
+  margin-right: 10px; }
+
+.arrow {
+  margin-top: 100px; }
+  .arrow .col-lg-1 {
+    height: 50px;
+    -webkit-background-size: contain;
+            background-size: contain;
+    background-image: url("../img/scroll-down.png");
+    background-repeat: no-repeat; }
+
+#section1 {
+  height: 670px; }
+
+.browser {
+  height: 350px;
+  width: 500px;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/browser.png"); }
+
+.sect1desc {
+  font-size: 2em;
+  width: 400px;
+  height: 400px;
+  float: right; }
+  .sect1desc p {
+    margin-top: 20%;
+    text-align: right; }
+
+#section2 {
+  height: 670px; }
+
+.circle {
+  height: 400px;
+  width: 400px;
+  float: right;
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("../img/circle.png"); }
+
+.sect2desc {
+  font-size: 2em;
+  width: 400px;
+  height: 400px; }
+  .sect2desc p {
+    margin-top: 25%; }

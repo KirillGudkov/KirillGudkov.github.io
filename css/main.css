@@ -192,7 +192,7 @@ a {
     text-decoration: none; }
 
 .preloader {
-  background-color: #fff;
+  background-color: #ccc;
   height: 100%;
   width: 100%;
   position: absolute;
@@ -207,7 +207,7 @@ a {
   margin: 0 0 0 0; }
 
 #header-fluid {
-  background: url("..//img/head-bg-gray.png") no-repeat;
+  background: url("..//img/head-bg-gray.jpg") no-repeat;
   height: 670px;
   -webkit-background-size: cover;
           background-size: cover; }
@@ -279,3 +279,20 @@ a {
   height: 400px; }
   .sect2desc p {
     margin-top: 25%; }
+
+#section3 h1 {
+  text-align: center; }
+
+#section3 .col-lg-10 {
+  height: 500px;
+  margin-top: 2%; }
+
+#slide1 {
+  background-image: url("../img/nocontent.png");
+  -webkit-background-size: contain;
+          background-size: contain; }
+
+#slide2 {
+  background-image: url("../img/nocontent.png");
+  -webkit-background-size: contain;
+          background-size: contain; }

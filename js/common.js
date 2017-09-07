@@ -4,3 +4,10 @@ $(document).ready(function(){
 		autoScrolling: true,
 	});
 });
+
+$(window).on('load', function () {
+    $preloader = $('.preloader'),
+      $loader = $preloader.find('.indicator');
+    $loader.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+  });

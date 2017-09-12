@@ -8,37 +8,37 @@
 </head>
 <body>
 
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter45885735 = new Ya.Metrika({
-                    id:45885735,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter45885735 = new Ya.Metrika({
+						id:45885735,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true
+					});
+				} catch(e) { }
+			});
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/watch.js";
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/45885735" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/45885735" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
 
-
+	<!-- Preloader It's just CSS preloader. calls in common.js -->
 	<div class="preloader">
 		<div class="indicator">
 			<div class="windows8">
@@ -60,62 +60,87 @@
 			</div>
 		</div>
 	</div>
+	<!-- it's a just contact form
+	but i contain her out of fullpage container because
+	i use blur effect on fullpage and i don't want to blur this div -->
+	<div class="contact-container">
+		<div class="form">
+		<!-- close-wrapper contain button to close contact area -->
+			<div class="close-wrapper">
+				<i class="fa fa-times-circle close-button" aria-hidden="true"></i>
+			</div>
+			<!-- needed action -->
+			<form>
+				<p>Your name</p>
+				<p><input type="text" required="true"></input>
+				<p>Your message</p>
+				<p><input type="textarea" required="true"></input>
+				<p><button>send</button>
+			</form>
+		</div>
+	</div>
+<!-- class fullpage is needed for fullpage.js library. This class
+	is container for sections. Each section have to have class "section" for
+	right work. Id's needed for set style.  -->
 	<div id="fullpage">
 		<div class="section" id="header-fluid">
-			<div class="nav">
+			<div class="container" id="nav">
 				<div class="row">
-					<div class="col-lg-1 col-lg-offset-10"><a href="#">my works</a></div>
-					<div class="col-lg-1"><a href="#">contact</a></div>
+					<div class="col-lg-1 col-lg-offset-10" id="works"><a href="#">My works</a></div>
+					<div class="col-lg-1"><a href="#" id="contact">Contact</a></div>
 				</div>
 			</div>
-			<div class="title">
+			<div class="container" id="title">
 				<div class="row">
 					<div class="col-lg-6 col-lg-offset-6">
-						<h1>Kirill Gudkov</h1>
-						<br>
-						<h2>Web page builder & Front End developer</h2>
+						<h1>Kirill Gudkov</h1><br>
+						<h2>Web designer <span>&</span> Front End developer</h2>
 					</div>
 				</div>
 			</div>
-			<div class="arrow">
+			<div class="container" id="arrow">
 				<div class="row">
-					<div class="col-lg-1 col-lg-offset-11">
+					<div class="col-lg-12 scroll-down">
 					</div>
 				</div>
 			</div>
+
 		</div>
 		<div class="section" id="section1">
-			<div class="row">
-				<div class="col-lg-4 col-lg-offset-2">
-					<div class="sect1desc">
-						<p><strong>About me</strong><br>
-							My name is Kirill. 
-							I’am 22 years old and I’am
-							from Russia. My task is 
-							to create <strong>cool interfaces</strong> 
-							and <strong>web pages</strong>.
-						</p>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<div class="sect1desc">
+							<p><strong>About me</strong><br>
+								My name is Kirill. 
+								I’am 22 years old and I’am
+								from Russia. My task is 
+								to create <strong>cool interfaces</strong> 
+								and <strong>web pages</strong>.
+							</p>
+						</div>
 					</div>
+					<div class="col-lg-4">
+						<div class="browser"></div>
+					</div>
+					<div class="col-lg-2"></div>
 				</div>
-				<div class="col-lg-4">
-					<div class="browser"></div>
-				</div>
-				<div class="col-lg-2"></div>
 			</div>
 		</div>
 		<div class="section" id="section2">
-			<div class="row">
-				<div class="col-lg-4 col-lg-offset-2">
-					<div class="circle"></div>
-				</div>
-				<div class="col-lg-4">
-					<div class="sect2desc">
-						<p>
-							<strong>My skill</strong><br>
-							I use a modern 
-							technologiesand I try to 
-							keep up with trends.I use 
-							<strong>HTML5, CSS3, Javascript,
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-lg-offset-2">
+						<div class="circle"></div>
+					</div>
+					<div class="col-lg-4">
+						<div class="sect2desc">
+							<p>
+								<strong>My skill</strong><br>
+								I use a modern 
+								technologiesand I try to 
+								keep up with trends.I use 
+								<strong>HTML5, CSS3, Javascript,
 								Bootstrap, Sass, 
 								React/Redux</strong>.
 							</p>
@@ -124,7 +149,9 @@
 					<div class="col-lg-2"></div>
 				</div>
 			</div>
-			<div class="section" id="section3">
+		</div>
+		<div class="section" id="section3">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-2 col-lg-offset-5">
 						<div class="sect3desc">
@@ -132,17 +159,18 @@
 						</div>
 					</div>
 					<div class="col-lg-5"></div>
-					<div class="row">
-						<div class="col-lg-10 col-lg-offset-1">
-							<div class="slide" id="slide1"></div>
-							<div class="slide" id="slide2"></div>
-						</div>
-						<div class="col-lg-1"></div>
+				</div>
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1">
+						<div class="slide" id="slide1"></div>
+						<div class="slide" id="slide2"></div>
 					</div>
+					<div class="col-lg-1"></div>
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/libs.min.js"></script>
-		<script type="text/javascript" src="js/common.js"></script>
-	</body>
-	</html>
+	</div>
+<script type="text/javascript" src="js/libs.min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

@@ -181,15 +181,17 @@
 
 body {
   margin: 0 0 0 0;
-  font-family: "RobotoThin";
-  background-color: #f3f0f0; }
+  font-family: "RobotoLight";
+  background-color: #f2f0f1; }
 
 a {
-  color: #fff;
   text-decoration: none; }
   a:hover {
-    color: #fff;
     text-decoration: none; }
+
+.container {
+  margin: 0 0 0 0;
+  width: 100%; }
 
 .preloader {
   background-color: #fff;
@@ -207,39 +209,119 @@ a {
   margin: 0 0 0 0; }
 
 #header-fluid {
-  background: url("..//img/head-bg-gray.jpg") no-repeat;
-  height: 670px;
+  background: url("..//img/head-bg-white-book.jpg") no-repeat;
   -webkit-background-size: cover;
-          background-size: cover; }
+          background-size: cover;
+  color: #333; }
 
-.nav .row {
-  color: #fff;
-  font-size: 18px; }
-  .nav .row .col-lg-1 {
-    height: 170px;
-    text-align: center; }
+.blured {
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+  -webkit-filter: blur(4px);
+          filter: blur(4px); }
 
-.title h1 {
-  font-family: "Robotolight";
-  color: #fff;
-  font-size: 8em;
-  text-align: right;
-  margin-right: 10px; }
+.non-blured {
+  -webkit-transition: all .7s;
+  -o-transition: all .7s;
+  transition: all .7s;
+  -webkit-filter: blur(0px);
+          filter: blur(0px); }
 
-.title h2 {
-  color: #fff;
-  text-align: right;
-  font-size: 50px;
-  margin-right: 10px; }
+.contact-container {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  z-index: 5; }
 
-.arrow {
+.form {
+  height: 400px;
+  width: 700px;
+  margin-top: 11%;
+  margin-bottom: 11%;
+  margin-left: 55%;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.1); }
+  .form form {
+    color: white;
+    position: absolute;
+    left: 50%;
+    margin-left: -250px;
+    top: 12%;
+    font-size: 20px; }
+    .form form input {
+      height: 40px;
+      width: 500px;
+      margin-bottom: 50px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px #FF6633 solid;
+      outline: none; }
+    .form form button {
+      color: white;
+      float: right;
+      background-color: transparent;
+      width: 100px;
+      border: 1px white solid;
+      -webkit-border-radius: 2px;
+              border-radius: 2px; }
+      .form form button:hover {
+        background-color: rgba(0, 0, 0, 0.5); }
+  .form .close-wrapper {
+    position: absolute;
+    top: -5%;
+    width: 720px;
+    height: 20px;
+    text-align: right; }
+    .form .close-wrapper .fa {
+      font-size: 18px;
+      color: #fff; }
+      .form .close-wrapper .fa:hover {
+        color: #FF6633;
+        cursor: pointer; }
+
+#nav .col-lg-1 {
+  text-align: center; }
+  #nav .col-lg-1 a {
+    font-family: "RobotoThin";
+    font-size: 18px;
+    color: #333;
+    text-decoration: none; }
+    #nav .col-lg-1 a:hover {
+      color: #FF6633; }
+
+#nav .col-lg-offset-10 {
+  border-right: 1px #FF6633 solid; }
+
+#title {
+  min-height: 450px;
+  padding-top: 10%; }
+  #title h1 {
+    font-family: "Robotolight";
+    font-size: 7em;
+    text-align: right; }
+  #title h2 {
+    font-family: "RobotoThin";
+    text-align: right;
+    font-size: 3em;
+    margin-right: 10px;
+    line-height: 60px; }
+  #title span {
+    color: #FF6633; }
+
+#arrow {
   margin-top: 100px; }
-  .arrow .col-lg-1 {
-    height: 50px;
+  #arrow .col-lg-12 {
+    height: 60px;
     -webkit-background-size: contain;
             background-size: contain;
+    background-position: center center;
     background-image: url("../img/scroll-down.png");
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    cursor: pointer; }
 
 #section1 {
   height: 670px; }

@@ -60,6 +60,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- it's a just contact form
 	but i contain her out of fullpage container because
 	i use blur effect on fullpage and i don't want to blur this div -->
@@ -69,16 +70,23 @@
 			<div class="close-wrapper">
 				<i class="fa fa-times-circle close-button" aria-hidden="true"></i>
 			</div>
-			<!-- needed action -->
+			<!-- needed action page (i think it will be 
+				something kind of ajax or simple php script) 
+			-->
 			<form>
-				<p>Your name</p>
-				<p><input type="text" required="true"></input>
-				<p>Your message</p>
-				<p><input type="textarea" required="true"></input>
-				<p><button>send</button>
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Personal Site">
+				<input type="hidden" name="admin_email" value="for.example.nickname@gmail.com">
+				<input type="hidden" name="form_subject" value="Someone want to contact with me">
+				<!-- END Hidden Required Fields -->
+				<p><input type="text" placeholder="Your name" required="true"></input>
+				<p><input type="textarea" placeholder="Your message" required="true"></input>
+				<p><button type="submit">send</button>
 			</form>
 		</div>
 	</div>
+
+
 <!-- class fullpage is needed for fullpage.js library. This class
 	is container for sections. Each section have to have class "section" for
 	right work. Id's needed for set style.  -->
@@ -86,8 +94,12 @@
 		<div class="section" id="header-fluid">
 			<div class="container" id="nav">
 				<div class="row">
-					<div class="col-lg-1 col-lg-offset-10" id="works"><a href="#">My works</a></div>
-					<div class="col-lg-1"><a href="#" id="contact">Contact</a></div>
+					<div class="col-lg-1 col-lg-offset-10" id="works">
+						<a href="#">My works</a>
+					</div>
+					<div class="col-lg-1">
+						<a href="#" id="contact">Contact</a>
+					</div>
 				</div>
 			</div>
 			<div class="container" id="title">
@@ -98,25 +110,22 @@
 					</div>
 				</div>
 			</div>
-			<div class="container" id="arrow">
-				<div class="row">
-					<div class="col-lg-12 scroll-down">
-					</div>
-				</div>
-			</div>
-
+			
 		</div>
 		<div class="section" id="section1">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 col-lg-offset-2">
 						<div class="sect1desc">
-							<p><strong>About me</strong><br>
+							<p>
+								<h2>About me</h2>
+								<br>
 								My name is Kirill. 
-								I’am 22 years old and I’am
-								from Russia. My task is 
-								to create <strong>cool interfaces</strong> 
-								and <strong>web pages</strong>.
+								I’am 22 years old and I’am web-developer with a Bachelor of Applied Science (B.A.Sc.), programming | Blagoveshchensk State Pedagogical University from Russia
+								<br>
+								<br>
+								I focuse on creating a <strong>visual part</strong> of your site. My task is creating a <strong>responsive</strong> web pages, wich looks good on 
+								<strong>any devices.</strong> 
 							</p>
 						</div>
 					</div>
@@ -136,13 +145,12 @@
 					<div class="col-lg-4">
 						<div class="sect2desc">
 							<p>
-								<strong>My skill</strong><br>
-								I use a modern 
-								technologiesand I try to 
-								keep up with trends.I use 
-								<strong>HTML5, CSS3, Javascript,
-								Bootstrap, Sass, 
-								React/Redux</strong>.
+								<h2>My skill</h2>
+								<br>
+								I use a modern technologies and I try to keep up with trends. My Photoshop skills allow me to create cool design and embody thoughts into reality. I use <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong> and <strong>Bootsrap grid</strong> to achieve a result. 
+								<br>
+								<br>
+								Also I use <strong>gulp</strong>, <strong>sass</strong>, <strong>emmet</strong> and different JS libraries to do my work faster.
 							</p>
 						</div>
 					</div>
@@ -155,17 +163,51 @@
 				<div class="row">
 					<div class="col-lg-2 col-lg-offset-5">
 						<div class="sect3desc">
-							<h1><strong>My works</strong></h1>
+							<h2>My works</h2>
 						</div>
 					</div>
 					<div class="col-lg-5"></div>
 				</div>
 				<div class="row">
-					<div class="col-lg-10 col-lg-offset-1">
-						<div class="slide" id="slide1"></div>
-						<div class="slide" id="slide2"></div>
+					<div class="col-lg-8 col-lg-offset-2">
+						<div class="slide" id="slide1" >
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus beatae ipsam maiores dolor cumque placeat dolorem nihil nisi, fuga quam inventore incidunt. Itaque quis reiciendis ad id dolorum nisi.</p>
+										<br>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, pariatur?</p></div>
+								</div>
+								<div class="col-lg-6">
+									<div class="preview"></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide" id="slide2">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus beatae ipsam maiores dolor cumque placeat dolorem nihil nisi, fuga quam inventore incidunt. Itaque quis reiciendis ad id dolorum nisi.</p>
+										<br>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, pariatur?</p></div>
+								</div>
+								<div class="col-lg-6">
+									<div class="preview"></div>
+								</div>
+							</div>
+						</div>
+						<div class="slide" id="slide3">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ducimus beatae ipsam maiores dolor cumque placeat dolorem nihil nisi, fuga quam inventore incidunt. Itaque quis reiciendis ad id dolorum nisi.</p>
+										<br>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, pariatur?</p></div>
+								</div>
+								<div class="col-lg-6">
+									<div class="preview"></div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="col-lg-1"></div>
+					<div class="col-lg-2"></div>
 				</div>
 			</div>
 		</div>

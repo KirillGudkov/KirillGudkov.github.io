@@ -25,3 +25,10 @@
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+	font-family: "JaapokkiSubtract";
+	src: url("../fonts/jaapokkisubtract-regular.ttf");
+		font-style: normal;
+	font-weight: normal;
+}

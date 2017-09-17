@@ -22,6 +22,12 @@
   font-style: normal;
   font-weight: normal; }
 
+@font-face {
+  font-family: "JaapokkiSubtract";
+  src: url("../fonts/jaapokkisubtract-regular.ttf");
+  font-style: normal;
+  font-weight: normal; }
+
 .windows8 {
   position: relative;
   width: 30px;
@@ -189,6 +195,9 @@ a {
   a:hover {
     text-decoration: none; }
 
+strong {
+  color: #FF6633; }
+
 .container {
   margin: 0 0 0 0;
   width: 100%; }
@@ -244,13 +253,13 @@ a {
   margin-bottom: 11%;
   margin-left: 55%;
   position: relative;
-  background-color: rgba(255, 255, 255, 0.1); }
+  background-color: #f2f0f1; }
   .form form {
     color: white;
     position: absolute;
     left: 50%;
     margin-left: -250px;
-    top: 12%;
+    top: 25%;
     font-size: 20px; }
     .form form input {
       height: 40px;
@@ -261,15 +270,15 @@ a {
       border-bottom: 1px #FF6633 solid;
       outline: none; }
     .form form button {
-      color: white;
+      color: #333;
       float: right;
       background-color: transparent;
       width: 100px;
-      border: 1px white solid;
+      border: 1px #333 solid;
       -webkit-border-radius: 2px;
               border-radius: 2px; }
       .form form button:hover {
-        background-color: rgba(0, 0, 0, 0.5); }
+        color: #FF6633; }
   .form .close-wrapper {
     position: absolute;
     top: -5%;
@@ -287,17 +296,14 @@ a {
   text-align: center; }
   #nav .col-lg-1 a {
     font-family: "RobotoThin";
-    font-size: 18px;
+    font-size: 16px;
     color: #333;
     text-decoration: none; }
     #nav .col-lg-1 a:hover {
       color: #FF6633; }
 
-#nav .col-lg-offset-10 {
-  border-right: 1px #FF6633 solid; }
-
 #title {
-  min-height: 450px;
+  height: 600px;
   padding-top: 10%; }
   #title h1 {
     font-family: "Robotolight";
@@ -327,54 +333,97 @@ a {
   height: 670px; }
 
 .browser {
-  height: 350px;
-  width: 500px;
+  height: 400px;
+  width: 600px;
   -webkit-background-size: contain;
           background-size: contain;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-image: url("../img/browser.png"); }
 
 .sect1desc {
-  font-size: 2em;
+  font-size: 16px;
   width: 400px;
   height: 400px;
   float: right; }
   .sect1desc p {
     margin-top: 20%;
-    text-align: right; }
+    text-align: left; }
 
 #section2 {
   height: 670px; }
+  #section2 .row, #section2 .container, #section2 .fp-tableCell {
+    height: 400px; }
 
 .circle {
   height: 400px;
   width: 400px;
   float: right;
+  margin-right: 15px;
   -webkit-background-size: contain;
           background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../img/circle.png"); }
 
 .sect2desc {
-  font-size: 2em;
+  margin-left: 15px;
+  font-size: 16px;
   width: 400px;
-  height: 400px; }
+  height: 400px;
+  float: left; }
   .sect2desc p {
-    margin-top: 25%; }
+    margin-top: 18%;
+    text-align: left; }
 
-#section3 h1 {
+.sect3desc {
+  margin-top: 40%;
   text-align: center; }
 
-#section3 .col-lg-10 {
-  height: 500px;
-  margin-top: 2%; }
+.desc {
+  height: 400px;
+  display: table-cell;
+  vertical-align: middle; }
 
-#slide1 {
-  background-image: url("../img/nocontent.png");
+#slide1 .preview {
+  background-image: url("../img/head-bg-white-chair.jpg");
   -webkit-background-size: contain;
-          background-size: contain; }
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px; }
 
-#slide2 {
-  background-image: url("../img/nocontent.png");
+#slide2 .preview {
+  background-image: url("../img/head-bg-gray.jpg");
   -webkit-background-size: contain;
-          background-size: contain; }
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px; }
+
+#slide3 .preview {
+  background-image: url("../img/head-bg-gray.jpg");
+  -webkit-background-size: contain;
+          background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px; }
+
+.fp-controlArrow.fp-next {
+  right: -20px;
+  top: 55%;
+  border-width: 20px 0 20px 10px;
+  border-color: transparent transparent transparent #999; }
+  .fp-controlArrow.fp-next:hover {
+    border-color: transparent transparent transparent #FF6633; }
+
+.fp-controlArrow.fp-prev {
+  left: -20px;
+  top: 55%;
+  width: 0;
+  border-width: 20px 10px 20px 0;
+  border-color: transparent #999 transparent transparent; }
+  .fp-controlArrow.fp-prev:hover {
+    border-color: transparent #FF6633 transparent transparent; }
+
+.fp-tableCell {
+  height: 500px !important; }

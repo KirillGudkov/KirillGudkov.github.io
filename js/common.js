@@ -33,16 +33,12 @@ $(window).on('load', function () {
 $("#contact").click(function(){
 	$(".contact-container").fadeIn(300);
 	$(".form").animate({'margin-left': '25%'}, 400);
-	$("#header-fluid").addClass('blured');
-	$("#header-fluid").removeClass('non-blured');
 });
 
 //button to close contact from and make layer under no blured
 $(".close-button").click(function(){
 	$(".contact-container").fadeOut(300);
 	$(".form").animate({'margin-left': '45%'}, 400);
-	$("#header-fluid").removeClass('blured');
-	$("#header-fluid").addClass('non-blured');
 });
 
 $(".scroll-down").click(function(){
@@ -51,4 +47,12 @@ $(".scroll-down").click(function(){
 
 $("#works").click(function(){
 	$.fn.fullpage.moveTo(4);
+});
+
+$("#aboutme").click(function(){
+	$.fn.fullpage.moveTo(2);
+});
+
+$("#services").click(function(){
+	$.fn.fullpage.moveTo(5);
 });

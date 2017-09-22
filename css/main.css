@@ -188,7 +188,8 @@
 body {
   margin: 0 0 0 0;
   font-family: "RobotoLight";
-  background-color: #f2f0f1; }
+  background-color: #f2f0f1;
+  cursor: default; }
 
 a {
   text-decoration: none; }
@@ -201,6 +202,9 @@ strong {
 .container {
   margin: 0 0 0 0;
   width: 100%; }
+
+#video {
+  position: absolute; }
 
 .preloader {
   background-color: #fff;
@@ -217,32 +221,18 @@ strong {
 .row {
   margin: 0 0 0 0; }
 
-#header-fluid {
+#header {
   background: url("..//img/head-bg-white-book.jpg") no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   color: #333; }
-
-.blured {
-  -webkit-transition: all .7s;
-  -o-transition: all .7s;
-  transition: all .7s;
-  -webkit-filter: blur(4px);
-          filter: blur(4px); }
-
-.non-blured {
-  -webkit-transition: all .7s;
-  -o-transition: all .7s;
-  transition: all .7s;
-  -webkit-filter: blur(0px);
-          filter: blur(0px); }
 
 .contact-container {
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   display: none;
   z-index: 5; }
 
@@ -255,7 +245,7 @@ strong {
   position: relative;
   background-color: #f2f0f1; }
   .form form {
-    color: white;
+    color: #333;
     position: absolute;
     left: 50%;
     margin-left: -250px;
@@ -295,8 +285,7 @@ strong {
 #nav .col-lg-1 {
   text-align: center; }
   #nav .col-lg-1 a {
-    font-family: "RobotoThin";
-    font-size: 16px;
+    font-size: 12px;
     color: #333;
     text-decoration: none; }
     #nav .col-lg-1 a:hover {
@@ -381,6 +370,7 @@ strong {
 
 .desc {
   height: 400px;
+  font-size: 14px;
   display: table-cell;
   vertical-align: middle; }
 
